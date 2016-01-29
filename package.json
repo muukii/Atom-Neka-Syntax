@@ -1,0 +1,14 @@
+{
+  "name": "Neka-Syntax",
+  "theme": "syntax",
+  "version": "0.1.0",
+  "description": "Neka Syntax",
+  "keywords": [
+    "syntax"
+  ],
+  "repository": "https://github.com/muukii/Neka-Syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
