@@ -6,7 +6,7 @@
   "keywords": [
     "syntax"
   ],
-  "repository": "https://github.com/muukii/Neka-Syntax",
+  "repository": "https://github.com/muukii/Atom-Neka-Syntax",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
