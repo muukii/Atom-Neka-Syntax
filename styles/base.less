@@ -1,4 +1,5 @@
 @import "syntax-variables";
+@import "color.less";
 
 atom-text-editor, :host {
   background-color: @syntax-background-color;
@@ -57,48 +58,48 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
 }
 
 .constant {
-  color: #ffe792;
+  color: @yellow;
 }
 
 .entity {
-  color: #3cadd7;
+  color: @blue;
 }
 
 .keyword {
   font-weight: bold;
-  color: #d7503c;
+  color: @red;
 }
 
 .storage {
-  color: #ffffff;
+  color: @syntax-text-color;
 }
 
 .storage.type {
   font-style: italic;
-  color: #3cadd7;
+  color: @blue;
 }
 
 .string {
-  color: #BCCC52;
+  color: @green;
 }
 
 .support {
   font-weight: bold;
-  color: #ffe792;
+  color: @yellow;
 }
 
 .entity.name.class, .entity.name.type.class, .support.type, .support.class {
-  color: #E7C547;
+  color: @dark-yellow;
 }
 
 .variable {
   font-weight: bold;
-  color: #E6992E;
+  color: @orange;
 }
 
 .invalid {
   color: #F8F8F8;
-  background-color: #d7503c;
+  background-color: @red;
 }
 
 .text .source {
@@ -115,28 +116,28 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
 }
 
 .string.quoted .source {
-  color: #BCCC52;
+  color: @green;
 }
 
 .string .constant {
-  color: #BCCC52;
+  color: @green;
 }
 
 .string.regexp {
   font-style: italic;
-  color: #FFB454;
+  color: @light-orange;
 }
 
 .string .variable {
-  color: #ffe792;
+  color: @yellow;
 }
 
 .support.function {
-  color: #d7503c;
+  color: @red;
 }
 
 .support.constant {
-  color: #BCCC52;
+  color: @green;
 }
 
 .other.preprocessor.c {
@@ -148,43 +149,43 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
 }
 
 .declaration.tag, .declaration.tag .entity, .meta.tag, .meta.tag .entity {
-  color: #3cadd7;
+  color: @blue;
 }
 
 .meta.selector.css .entity.name.tag {
-  color: #3cadd7;
+  color: @blue;
 }
 
 .meta.selector.css .entity.other.attribute-name.id {
   font-weight: bold;
-  color: #ffe792;
+  color: @yellow;
 }
 
 .meta.selector.css .entity.other.attribute-name.class {
   font-weight: bold;
-  color: #BCCC52;
+  color: @green;
 }
 
 .support.type.property-name.css {
-  color: #ffffff;
+  color: @syntax-text-color;
 }
 
 .meta.property-group .support.constant.property-value.css, .meta.property-value .support.constant.property-value.css {
   font-style: italic;
-  color: #BCCC52;
+  color: @green;
 }
 
 .meta.preprocessor.at-rule .keyword.control.at-rule {
   font-weight: bold;
-  color: #ffe792;
+  color: @yellow;
 }
 
 .meta.property-value .support.constant.named-color.css, .meta.property-value .constant {
-  color: #ffe792;
+  color: @yellow;
 }
 
 .meta.constructor.argument.css {
-  color: #d7503c;
+  color: @red;
 }
 
 .meta.diff, .meta.diff.header {
@@ -195,12 +196,12 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
 
 .markup.deleted {
   color: #F8F8F8;
-  background-color: #d7503c;
+  background-color: @red;
 }
 
 .markup.changed {
   color: #F8F8F8;
-  background-color: #3cadd7;
+  background-color: @blue;
 }
 
 .markup.inserted {
@@ -213,20 +214,20 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
 }
 
 .sublimelinter.outline.illegal {
-  background-color: #d7503c;
+  background-color: @red;
 }
 
 .sublimelinter.underline.illegal {
-  background-color: #d7503c;
+  background-color: @red;
 }
 
 .sublimelinter.outline.warning {
-  color: #ffffff;
+  color: @syntax-text-color;
   background-color: #9f3a2c;
 }
 
 .sublimelinter.underline.warning {
-  background-color: #d7503c;
+  background-color: @red;
 }
 
 .sublimelinter.outline.violation {
@@ -234,16 +235,16 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
 }
 
 .sublimelinter.underline.violation {
-  background-color: #d7503c;
+  background-color: @red;
 }
 
 .entity.other.attribute-name.id.html {
-  color: #f57542;
+  color: @orange;
 }
 
 .entity.other.attribute-name.html {
   font-weight: bold;
-  color: #BCCC52;
+  color: @green;
 }
 
 .punctuation.definition.tag.end, .punctuation.definition.tag.begin, .punctuation.definition.tag {
@@ -252,51 +253,51 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
 
 .keyword.control.at-rule.import.css {
   font-weight: bold;
-  color: #f7f09d;
+  color: @yellow;
 }
 
 .variable.other.less {
-  color: #ffffff;
+  color: @syntax-text-color;
 }
 
 .entity.other.less.mixin {
-  color: #ffffff;
+  color: @syntax-text-color;
 }
 
 .source.css.less .keyword.unit.css {
-  color: #BCCC52;
+  color: @green;
 }
 
 .entity.other.attribute-name.angular.html, .source.angular.embedded.html {
-  color: #ffe792;
+  color: @yellow;
 }
 
 .constant.character.entity.html {
-  color: #BCCC52;
+  color: @green;
 }
 
 .variable.other.readwrite.instance.coffee {
-  color: #BCCC52;
+  color: @green;
 }
 
 .meta.brace.round.coffee, .meta.brace.square.coffee {
-  color: #ffe792;
+  color: @yellow;
 }
 
 .punctuation.section.embedded.coffee {
-  color: #BCCC52;
+  color: @green;
 }
 
 .variable.assignment.coffee .variable.assignment.coffee {
-  color: #FFFFFF;
+  color: @syntax-text-color;
 }
 
 .meta.delimiter.method.period.coffee {
-  color: #3cadd7;
+  color: @blue;
 }
 
 .meta.brace.curly.coffee {
-  color: #BCCC52;
+  color: @green;
 }
 
 .meta.tag.sgml.doctype.xml, .declaration.sgml.html .declaration.doctype, .declaration.sgml.html .declaration.doctype .entity, .declaration.sgml.html .declaration.doctype .string, .declaration.xml-processing, .declaration.xml-processing .entity, .declaration.xml-processing .string, .doctype {
@@ -304,7 +305,7 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
 }
 
 .markup.deleted.git_gutter {
-  color: #d7503c;
+  color: @red;
 }
 
 .markup.inserted.git_gutter {
@@ -312,7 +313,7 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
 }
 
 .markup.changed.git_gutter {
-  color: #3cadd7;
+  color: @blue;
 }
 
 .markup.ignored.git_gutter {
@@ -324,25 +325,9 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
 }
 
 .punctuation.definition.string.begin.json:not(.meta.structure.dictionary.value.json), .punctuation.definition.string.end.json:not(.meta.structure.dictionary.value.json) {
-  color: #ffffff;
-}
-
-.meta.structure.dictionary.json .string.quoted.double.json {
-  color: #3cadd7;
+  color: @syntax-text-color;
 }
 
 .meta.structure.dictionary.value.json .string.quoted.double.json {
-  color: #ffe792;
-}
-
-.sublimelinter.gutter-mark {
-  color: #FFFFFF;
-}
-
-.sublimelinter.mark.warning {
-  color: #DDB700;
-}
-
-.sublimelinter.mark.error {
-  color: #D02000;
+  color: @yellow;
 }
